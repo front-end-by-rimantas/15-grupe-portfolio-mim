@@ -6,7 +6,6 @@
         display: inline-block;
         width:1400px;
         margin: 0 calc(50% - 640px);
-        background-color: bisque;
     }
 
 @media (max-width: 1500px){
