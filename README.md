@@ -14,3 +14,7 @@ Design: [Mim template](http://wp.regaltheme.com/mim/)
 
 ### Authors
 [Edgaras Aleksiukas] https://github.com/Aleksiukas
+[Linas Bisikirskas] https://github.com/LinoGitas
+[Eimantas Pavėsys] https://github.com/eimantaspav
+[Audrius Sabaliauskas] https://github.com/Sabaliukas
+
