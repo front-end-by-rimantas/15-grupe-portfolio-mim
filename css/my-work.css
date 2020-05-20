@@ -1,0 +1,17 @@
+
+.container > .my-work > .col-2 > .info { 
+    display: inline-block;
+    padding:10px 0 10px 0;
+    width:100%;
+}
+
+.container > .my-work > .col-2 > .img {
+    display: inline-block;
+    width:100%;
+}
+
+.container > .my-work > .col-2 > .img > img{
+    display: inline-block;
+    width:100%;
+    height:auto;
+}

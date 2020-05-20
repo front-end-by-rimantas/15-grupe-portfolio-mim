@@ -1,0 +1,11 @@
+.container > .portfolio > .col-3 > .img > img{
+    display: inline-block;
+    width:100%;
+    height:auto;
+}
+
+.break {
+    display: inline-block;
+    width:100%;
+    padding: 8px 0 8px 0;
+}
