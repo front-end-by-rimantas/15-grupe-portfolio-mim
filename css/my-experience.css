@@ -1,0 +1,39 @@
+.container > .my-experience > .col-2 > .info-left {
+    display: inline-block;
+    width:30%;
+    float:left;
+    padding:10px 0 10px 0;
+}
+
+.container > .my-experience > .col-2 > .info-right {
+    display: inline-block;
+    width:70%;
+    float:left;
+    padding:10px 0 10px 0;
+}
+
+.container > .my-experience > .col-2 > .info-left > h4{
+    display: inline-block;
+    color: #333;
+}
+
+.container > .my-experience > .col-2 > .info-left > p{
+    display: inline-block;
+    color:#666;
+}
+
+.container > .my-experience > .col-2 > .info-right > h3{
+    display: inline-block;
+    color:#333;
+}
+
+.container > .my-experience > .col-2 > .info-right > p{
+    display: inline-block;
+    color:#666;
+}
+
+.break {
+    display: inline-block;
+    width:100%;
+    padding: 7px 0 7px 0;
+}

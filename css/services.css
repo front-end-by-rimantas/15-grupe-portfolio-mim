@@ -1,0 +1,21 @@
+.container > .services > .col-4 > .item{
+    display: inline-block;
+    padding:20px;
+    text-align:center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container > .services > .col-4 > .item > .fa{
+    display: inline-block;
+    color:#999;
+    border:solid 1px #999;
+    font-size:16px;
+    border-radius: 50px;
+    padding:6px;
+    margin:20px 0 20px 0;
+}
+
+.container > .services > .col-4 > .item > hr{
+    color:#999
+}
+

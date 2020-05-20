@@ -1,0 +1,36 @@
+.container > .testimonial > .reset{
+    display: inline-block;
+    width:60%;
+    margin: 0 calc(50% - 30%);
+}
+
+.container > .testimonial > .reset > .item {
+    display: inline-block;
+    position: relative;
+    width:100%;
+    margin-top:50px;
+    padding:20px;
+    background-color: #f5f5f5;
+    text-align:center;
+}
+
+.container > .testimonial > .reset > .item > img {
+    display: inline-block;
+    position: absolute;
+    top: -50px;
+    left:0;
+    right:0;
+    margin:0 auto;
+}
+
+.container > .testimonial > .reset > .item > h4 {
+    margin: 50px 0 20px 0;
+}
+
+.container > .testimonial > .reset > .item > h6 {
+    
+}
+
+.container > .testimonial > .reset > .item > p {
+    
+}

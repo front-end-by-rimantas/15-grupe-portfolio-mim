@@ -1,0 +1,21 @@
+ .btn {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-align:center;
+    font-size: 15px;
+    font-weight: 300;
+    width: 50%;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+ x
+  }
+  
