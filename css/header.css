@@ -1,12 +1,36 @@
 .container > .header > .col-1 > .logo {
     display: inline-block;
-    padding:10px 0 10px 0;
+    padding:20px 0 0 0;
     width:19%;
 }
 
 .container > .header > .col-1 > .nav {
     display: inline-block;
-    padding:10px 0 10px 0;
+    padding:30px 0 0 0;
     width:80%;
     text-align:right;
 }
+    .nav > a {
+        text-decoration: none;
+        padding: 0 15px;
+        vertical-align: bottom;
+    }
+    .side-bar {
+     display: inline-block;   
+    }
+        .side-bar > .hamburger {
+            position: absolute;
+            right: 15%;
+            top: 20px;
+        }
+            .side-bar > .hamburger > .span {
+                display: block;
+                width: 30px;
+                height: 5px;
+                color: #616161;
+                
+            }
+            .side-bar ul li {
+                border-bottom: 1px solid white;
+
+            }
