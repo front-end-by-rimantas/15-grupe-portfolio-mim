@@ -82,6 +82,7 @@
         font-weight: 300;
         border: none;
         border-bottom: 1px solid #ddd;
+        outline: none;
     }
     .form > textarea {
         resize: vertical;
