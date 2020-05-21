@@ -1,3 +1,6 @@
+HTML {
+    scroll-behavior: smooth;
+}
 body,
 body * {
 margin: 0;

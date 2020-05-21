@@ -31,36 +31,30 @@
                     <img src="./img/dark-logo.png" alt="logo">
                 </div> 
                 <nav class="nav">
-                   <a href="#">HOME</a>
-                   <a href="#">ABOUT</a>
-                   <a href="#">PORTFOLIO</a>
-                   <a href="#">SERVICES</a>
-                   <a href="#">BLOG</a>
-                   <a href="#">CONTACT</a>          
-                   <div class="side-bar">
-                       <div class="hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                       </div>
-                        <ul>
-                            <li><img src="./img/light-logo.png" alt="logo"> </li>
-                            <li><a href="">HOME</a></li>
-                            <li><a href="">ABOUT</a></li>
-                            <li><a href="">PORTFOLIO</a></li>
-                            <li><a href="">SERVICES</a></li>
-                            <li><a href="">BLOG</a></li>
-                            <li><a href="">CONTACT</a></li>
-                            <li><a href="">UPDATE & NOTICE</a></li>
-                            <li><a href="">PRICING & TIMELINE</a></li>
-                            <li><a href="PORTFOLIO DETAILS"></a></li>
-                            <li><a href="">Pricing & Timeline ( Dark Version )</a></li>
-                        </ul> 
-                   </div>           
-                </nav>
-                </div>
-            </div>
-        </div>
+                    <a href="#">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#portfolio">PORTFOLIO</a>
+                    <a href="#services">SERVICES</a>
+                    <a href="#blog">BLOG</a>
+                    <a href="#contact">CONTACT</a>          
+                    <button class="openbtn" onclick="openNav()">&#9776; </button>        
+                </nav>               
+                        <div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="lightLogo"><img src="./img/light-logo.png" alt="logo"></div> 
+                            <a href="">HOME</a>
+                            <a href="#about">ABOUT</a>
+                            <a href="#portfolio">PORTFOLIO</a>
+                            <a href="#services">SERVICES</a>
+                            <a href="#blog">BLOG</a>
+                            <a href="#contact">CONTACT</a>
+                            <a href="">UPDATE & NOTICE</a>
+                            <a href="">PRICING & TIMELINE</a>
+                            <a href="">PORTFOLIO DETAILS
+                            <a href="">Pricing & Timeline ( Dark Version )</a>                        
+                        </div>      
+            </div>    
+        </div>  
     </header>
 
     <!-- MY-WORK -->
@@ -87,7 +81,7 @@
 
     <!-- ABOUT ME -->
 
-    <section class="container">
+    <section id="about" class="container">
         <div class="row about-me">
             <h2>ABOUT ME</h2>
             <div class="col-2">
@@ -179,7 +173,7 @@
 
     <!-- PORTFOLIO -->
 
-    <section class="container">
+    <section id="portfolio" class="container">
         <div class="row portfolio">
             <h2>MY PORTFOLIO</h2>
             <div class="col-3">
@@ -239,7 +233,7 @@
 
     <!-- SERVICES -->
 
-    <section class="container bg">
+    <section id="services" class="container bg">
         <div class="row services">
             <h2>MY SERVICES</h2>
             <div class="col-4">
@@ -297,7 +291,7 @@
 
     <!-- MY-BLOG -->
 
-    <section class="container bg">
+    <section id="blog" class="container bg">
         <div class="row my-blog">
             <h2>MY BLOG</h2>
             <div class="col-3">
@@ -361,7 +355,7 @@
 
     <!-- CONTACT -->
 
-    <section class="container">
+    <section id="contact" class="container">
         <div class="row contact">
             <div class="col-2">
                 <div class="info">
