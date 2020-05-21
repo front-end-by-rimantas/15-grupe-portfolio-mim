@@ -3,14 +3,134 @@
     width:100%;
     padding:10px 0 10px 0;
 }
+    .container .about-me > .col-2 > .info> h3 {
+        font-weight: 600;
+        margin: 0 0 15px;
+        font-size: 22px;
+        font-family: 'montserratsemibold';
+        color: #4f4f4f;
+        line-height: 1.1;
+    }
+    .container .about-me > .col-2 > .info> p {
+        line-height: 28px;
+        font-size: 16px;
+    }
 
-.container > .about-me > .col-2 > .btn { 
-    display: inline-block;
-    padding:10px 0 10px 0;
+.container > .about-me > .col-2 > .download-btn > a { 
+    background-color: #393939;
+    color: white;
+    text-decoration: none;
+    border: 20px none;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 47px;
+    line-height: 50px;
+    padding: 10px 20px;
+    outline-width: initial;
 }
 
 .container > .about-me > .col-2 > .progress-bar-container {
     display: inline-block;
-    padding:10px 0 10px 0;
+    padding: 10px 10px;
     width:100%;
 }
+
+/* Progress bar + animation  */
+
+.progress-bar-container{
+    display: inline-block;
+    width: 100%;
+}
+.progress-bar-container + .progress-bar-container {
+    margin-top: 10px;
+}
+.progress-bar-container > .barText {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 8px;
+    color: #5e5e5e;
+    line-height: 24px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+    .progress-bar-container > .barText> .label {
+    display: inline-block;
+    float: left;
+    }
+    #value1 {
+        display: inline-block;
+        float: right;
+        margin-right: 7%;
+    }
+    #value2 {
+        display: inline-block;
+        float: right;
+        margin-right: 12%;
+    }
+    #value3 {
+        display: inline-block;
+        float: right;
+        margin-right: 2%;
+    }
+    .progress-bar-container > .bar {
+        display: inline-block;
+        width: 100%;
+        height: 7px;
+        background-color: #c8c8c8;
+        border-radius: 3px;
+    }
+        .progress-bar-container > .bar::after{
+            display: inline-block;
+            content: "";
+            background-color: #484848;
+            box-shadow: 0 0 0 4px rgba(72,72,72,.5);
+            border-radius: 50%;
+            height: 14px;
+            width: 14px;
+            position: absolute;
+            bottom: 10;
+            margin-top: -4px;
+            margin-left: -3px;
+       
+        }
+        .progress-bar-container > .bar > .value {
+            display: inline-block;
+            width: 90%;
+            height: 100%;
+            position: relative;
+        }
+        .progress-bar-container > .bar > .value > .load {
+            display: inline-block;
+            background-color: #484848;
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+            border-radius: 3px;
+
+            animation-name: loading;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-delay: 1,5s;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+        }
+            .progress-bar-container:hover > .bar > .value > .load {
+                animation-play-state: paused;
+            }
+
+@keyframes loading {
+0% {
+    width: 0;
+    background-color: #484848;
+}
+100% {
+    width: 100%;
+    background-color: #484848;
+}
+}
+
+
+
