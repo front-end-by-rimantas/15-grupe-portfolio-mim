@@ -14,3 +14,89 @@
     padding:10px 0 10px 0;
     width:100%;
 }
+
+/* Progress bar + animation  */
+
+.progress-bar-container{
+    display: inline-block;
+    width: 100%;
+}
+.progress-bar-container + .progress-bar-container {
+    margin-top: 10px;
+}
+.progress-bar-container > .barText {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 8px;
+    color: #5e5e5e;
+    line-height: 24px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+    .progress-bar-container > .barText> .label {
+    display: inline-block;
+    float: left;
+    }
+    #value1 {
+        display: inline-block;
+        float: right;
+        margin-right: 34%;
+    }
+    #value2 {
+        display: inline-block;
+        float: right;
+        margin-right: 37%;
+    }
+    #value3 {
+        display: inline-block;
+        float: right;
+        margin-right: 30%;
+    }
+    .progress-bar-container > .bar {
+        display: inline-block;
+        width: 70%;
+        height: 7px;
+        background-color: #c8c8c8;
+        border-radius: 3px;
+    }
+    .progress-bar-container > .bar > .value {
+        display: inline-block;
+        width: 90%;
+        height: 100%;
+        position: relative;
+    }
+        .progress-bar-container > .bar > .value > .load {
+            display: inline-block;
+            background-color: #484848;
+            width: 100%;
+            height: 100%;
+            vertical-align: top;
+            border-radius: 3px;
+
+            animation-name: loading;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+            animation-delay: 1,5s;
+            animation-timing-function: linear;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+        }
+            .progress-bar-container:hover > .bar > .value > .load {
+                animation-play-state: paused;
+            }
+
+@keyframes loading {
+0% {
+    width: 0;
+    background-color: #484848;
+}
+100% {
+    width: 100%;
+    background-color: #484848;
+}
+}
+
+
+
