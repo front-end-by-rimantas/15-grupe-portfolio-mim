@@ -8,7 +8,7 @@
   width:100%;
   text-align:left;
   padding-bottom:30px;
-  font-size: 30px;
+  font-size: 33px;
   color: #444;
   font-weight: 600;
 }
@@ -16,6 +16,7 @@
 .container > .contact > .col-2 > .info > p {
   display: inline-block;
   font-size: 17px;
+  line-height: 25px;
   color: #666;
   font-weight: 300;
   margin-bottom:40px;
@@ -37,7 +38,7 @@
 
  .container > .contact > .col-2 > .info > .right > h4 {
   display: inline-block;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
   color: #666;
   margin-bottom:5px;
