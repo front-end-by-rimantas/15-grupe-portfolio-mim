@@ -1,3 +1,51 @@
+.container > .portfolio > .col-1 > .filters{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    margin-bottom: 40px;
+}
+  
+.container > .portfolio > .col-1 > .filters > li {
+   display: inline-block;
+   position:relative;
+   color: #999;
+   padding: 0 8px 0 8px;
+   font-size: 14px;
+   font-weight: 300;
+   cursor:pointer;
+   /*text-decoration: underline;*/
+  }
+
+.container > .portfolio > .col-1 > .filters > li:after {
+    content: "";
+    height: 1px;
+    width: 0;
+    background-color: #999;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.4s;
+    opacity: 0;
+  }
+
+.container > .portfolio > .col-1 > .filters > li:hover:after {
+    opacity: 1;
+    width:100%;
+}
+
+
+
+
+
+
+.container > .portfolio > .col-3 > .img > img{
+    display: inline-block;
+    width:100%;
+    height:auto;
+}
+
 .container > .portfolio > .col-3 > .img > img{
     display: inline-block;
     width:100%;
