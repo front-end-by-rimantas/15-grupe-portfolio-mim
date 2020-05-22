@@ -19,29 +19,38 @@
     <link rel="stylesheet" href="./css/my-blog.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </head>
 <body>
     
     <!-- HEADER -->
 
-    <header class="container bg">
+    <header id="header" class="container bg">
         <div class="row header">
             <div class="col-1">
-                <div class="logo">
+                <a class="logo" href="#header"> 
                     <img src="./img/dark-logo.png" alt="logo">
-                </div> 
+                </a>            
                 <nav class="nav">
+                    <div class="openbtn" onclick="openNav()">
+                        <div class="hmbLine"></div>
+                        <div class="hmbLine"></div>
+                        <div class="hmbLine"></div>
+                    </div>
                     <a href="#">HOME</a>
                     <a href="#about">ABOUT</a>
                     <a href="#portfolio">PORTFOLIO</a>
                     <a href="#services">SERVICES</a>
                     <a href="#blog">BLOG</a>
-                    <a href="#contact">CONTACT</a>          
-                    <button class="openbtn" onclick="openNav()">&#9776; </button>        
-                </nav>               
+                    <a href="#contact">CONTACT</a> 
+                    
+                </nav>
+                       
                         <div id="mySidepanel" class="sidepanel">
-                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                            <div class="lightLogo"><img src="./img/light-logo.png" alt="logo"></div> 
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                <span class="iconify" data-icon="zmdi-close-circle-o" data-inline="false"></span>
+                            </a>
+                            <a class="lightLogo" href="#header"><img src="./img/light-logo.png" alt="logo"></a>
                             <a href="">HOME</a>
                             <a href="#about">ABOUT</a>
                             <a href="#portfolio">PORTFOLIO</a>
@@ -416,7 +425,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./js/header.js"></script>
     <script src="./js/data.js"></script>
 </body>
 </html>

@@ -2,19 +2,88 @@
     display: inline-block;
     padding:20px 0 0 0;
     width:19%;
+    float: left;
 }
 
 .container > .header > .col-1 > .nav {
     display: inline-block;
     padding:30px 0 0 0;
     width:80%;
-    text-align:right;
+    float: right;
 }
     .nav > a {
         text-decoration: none;
         padding: 0 15px;
         vertical-align: bottom;
         color: #777777;
+        float: right;
     }
-    
-    
+    .openbtn {
+        cursor: pointer;
+        padding: 10px 15px;
+        border: none;
+        float: right;
+    }
+        .hmbLine {         
+                width: 17px;
+                height: 2px;
+                background-color: #616161;
+                margin: 2px 0;                   
+        }
+            .sidepanel {
+                height: 100%; 
+                width: 0; 
+                position: fixed; 
+                z-index: 1;
+                top: 0;
+                right: 0;
+                background-color: #2B2B2B; 
+                overflow-x: hidden;
+                padding-top: 30px; 
+                transition: 0.5s;                
+            }   
+                .sidepanel:hover{
+                    box-shadow: ;
+                }
+            
+
+            .sidepanel > a {
+                line-height: 40px;                
+                text-decoration: none;
+                font-size: 15px;
+                padding-left: 15px;
+                font-weight: bold;
+                color: #ffffff;
+                display: block;
+                border-bottom: solid 1px #555555;
+            }
+                .sidepanel > a:last-child{
+                    border: none;
+                }
+                .sidepanel > a:hover{
+                    background-color: #000000;
+                }
+                .sidepanel > .closebtn {
+                    position: absolute;
+                    top: 0;
+                    font-size: 25px;
+                    float: left;   
+                    padding: 8px 8px;
+                    border: none;
+                }  
+                .lightLogo {
+                    border-bottom: solid 1px #555555;
+                    text-align: center;
+                    padding: 60px;                    
+                }
+                    .sidepanel > .closebtn > .iconify {
+                        color: #999999;
+                    }
+                        .closebtn > .iconify:hover {
+                            color: #ffffff;
+                        }           
+               
+        
+       
+        
+            
