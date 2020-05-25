@@ -46,6 +46,16 @@
         margin:0 1% 0 1%;
     }
 
+    
+    .container > .row > .col-5 {
+        display: inline-block;
+        float:left;
+        width:48%;
+        /*border:solid 1px #111;*/
+        margin:0 1% 0 1%;
+    }
+
+
     .bg{
         background-color:#F5F5F5;
     }
