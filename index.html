@@ -24,23 +24,51 @@
     
     <!-- HEADER -->
 
-    <header class="container bg">
+    <header id="header" class="container bg">
         <div class="row header">
             <div class="col-1">
-                <div class="logo">
+                <a class="logo" href="#header"> 
                     <img src="./img/dark-logo.png" alt="logo">
-                </div> 
+                </a>            
                 <nav class="nav">
-                </nav>
-            </div>
-        </div>
+                        <div class="openbtn" onclick="openNav()">
+                            <div class="hmbLine"></div>
+                            <div class="hmbLine"></div>
+                            <div class="hmbLine"></div>
+                        </div>
+                    <div class="headerNav">
+                        <a href="#">HOME</a>
+                        <a href="#about">ABOUT</a>
+                        <a href="#portfolio">PORTFOLIO</a>
+                        <a href="#services">SERVICES</a>
+                        <a href="#blog">BLOG</a>
+                        <a href="#contact">CONTACT</a>   
+                    </div>                   
+                </nav>                       
+                        <div id="mySidepanel" class="sidepanel">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                                <i class="fa fa-times-circle iconify"></i>
+                            </a>
+                            <a class="lightLogo" href="#header"><img src="./img/light-logo.png" alt="logo"></a>
+                            <a href="">HOME</a>
+                            <a href="#about">ABOUT</a>
+                            <a href="#portfolio">PORTFOLIO</a>
+                            <a href="#services">SERVICES</a>
+                            <a href="#blog">BLOG</a>
+                            <a href="#contact">CONTACT</a>
+                            <a href="">UPDATE & NOTICE</a>
+                            <a href="">PRICING & TIMELINE</a>
+                            <a href="">PORTFOLIO DETAILS
+                            <a href="">Pricing & Timeline ( Dark Version )</a>                        
+                        </div>      
+            </div>    
+        </div>  
     </header>
 
     <!-- MY-WORK -->
 
     <section class="container bg">
         <div class="row my-work">
-            <h2>My WORK</h2>
             <div class="col-2">
                 <div class="info">
                     <h5>HELLO, MY NAME IS</h5>
@@ -48,7 +76,7 @@
                     <p>
                         On the other hand, we denounce with righteous indignation and dislike men who are so beguiled demord by.
                     </p>
-                    <div class="btn">MY WORK</div>
+                    <div class="my-work-btn">MY WORK</div>
                 </div>
             </div>
             <div class="col-2">
@@ -61,7 +89,7 @@
 
     <!-- ABOUT ME -->
 
-    <section class="container">
+    <section id="about" class="container">
         <div class="row about-me">
             <h2>ABOUT ME</h2>
             <div class="col-2">
@@ -178,7 +206,7 @@
 
     <!-- PORTFOLIO -->
 
-    <section class="container">
+    <section id="portfolio" class="container">
         <div class="row portfolio">
             <h2>MY PORTFOLIO</h2>
             <div class="col-1">
@@ -272,7 +300,7 @@
 
     <!-- SERVICES -->
 
-    <section class="container bg">
+    <section id="services" class="container bg">
         <div class="row services">
             <h2>MY SERVICES</h2>
             <div class="col-4">
@@ -337,7 +365,7 @@
 
     <!-- MY-BLOG -->
 
-    <section class="container bg">
+    <section id="blog" class="container bg">
         <div class="row my-blog">
             <h2>MY BLOG</h2>
             <div class="col-3">
@@ -419,7 +447,7 @@
 
     <!-- CONTACT -->
 
-    <section class="container">
+    <section id="contact" class="container">
         <div class="row contact">
             <div class="col-2">
                 <div class="info">
@@ -489,7 +517,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./js/header.js"></script>
     <script src="./js/data.js"></script>
 </body>
 </html>
