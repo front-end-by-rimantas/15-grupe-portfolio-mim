@@ -11,7 +11,7 @@
     width:80%;
     float: right;
 }
-    .nav > a {
+    .nav > .navigationBar > a {
         text-decoration: none;
         padding: 0 15px;
         vertical-align: bottom;
@@ -20,7 +20,7 @@
     }
     .openbtn {
         cursor: pointer;
-        padding: 3px 15px;
+        padding: 2px 15px;
         border: none;
         float: right;
     }
@@ -63,6 +63,14 @@
                 .sidepanel > a:hover{
                     background-color: #000000;
                 }
+                .sidepanel:hover > .lightLogo{
+                    background-color: #2B2B2B; 
+                    opacity: 0.3;
+                }
+                .sidepanel:hover  > .closebtn{
+                    background-color: #2B2B2B; 
+                    opacity: 0.9;
+                }
                 .sidepanel > .closebtn {
                     position: absolute;
                     top: 0;
@@ -74,7 +82,9 @@
                 .lightLogo {
                     border-bottom: solid 1px #555555;
                     text-align: center;
-                    padding: 60px;                    
+                    padding: 60px; 
+                    transition: 2s; 
+                    opacity: 0.9;                                       
                 }
                     .sidepanel > .closebtn > .iconify {
                         color: #999999;
@@ -83,7 +93,11 @@
                             color: #ffffff;
                         }           
                
-        
+                        @media (max-width: 1199px){
+                            .container > .header > .col-1 > .nav > .navigationBar {
+                                display: none;
+                            }
+                        }
        
         
             
