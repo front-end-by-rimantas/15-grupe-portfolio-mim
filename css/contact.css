@@ -1,6 +1,7 @@
 .container > .contact > .col-2 > .info {
   display: inline-block;
   width:90%;
+  margin-top:60px;
 }
 
 .container > .contact > .col-2 > .info > h2 {
@@ -75,7 +76,7 @@
   .form {
     display: inline-block;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 64px;
 }
     .form > input,
     .form > textarea {
