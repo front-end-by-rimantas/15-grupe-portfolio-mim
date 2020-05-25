@@ -41,12 +41,7 @@
                 overflow-x: hidden;
                 padding-top: 30px; 
                 transition: 0.5s;                
-            }   
-                .sidepanel:hover{
-                    box-shadow: ;
-                }
-            
-
+            }       
             .sidepanel > a {
                 line-height: 40px;                
                 text-decoration: none;
@@ -94,7 +89,7 @@
                         }           
                
                         @media (max-width: 1199px){
-                            .container > .header > .col-1 > .nav > .navigationBar {
+                            .container > .header > .col-1 > .nav > .headerNav {
                                 display: none;
                             }
                         }
