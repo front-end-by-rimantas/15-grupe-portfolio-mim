@@ -1,11 +1,154 @@
-.container > .portfolio > .col-3 > .img > img{
-    display: inline-block;
+.container > .portfolio > .col-1 > .filters{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    margin-bottom: 40px;
+}
+  
+.container > .portfolio > .col-1 > .filters > li {
+   display: inline-block;
+   position:relative;
+   color: #999;
+   padding: 0 8px 0 8px;
+   font-size: 14px;
+   font-weight: 300;
+   cursor:pointer;
+   /*text-decoration: underline;*/
+  }
+
+.container > .portfolio > .col-1 > .filters > li:after {
+    content: "";
+    height: 1px;
+    width: 0;
+    background-color: #999;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%);
+    transition: 0.4s;
+    opacity: 0;
+  }
+
+.container > .portfolio > .col-1 > .filters > li:hover:after {
+    opacity: 1;
     width:100%;
-    height:auto;
 }
 
-.break {
+
+.container > .portfolio > .col-3 > .img {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container > .portfolio > .col-3 > .img > .title {
+    display: inline-block;
+    position: absolute;
+    left:10%;
+    bottom:0;
+    font-size: 21px;
+    font-weight:300;
+    color:#333;
+    z-index:1;
+    transition: 0.4s;
+    transition-delay: 0.3s;
+    opacity: 0;
+}
+
+.container > .portfolio > .col-3 > .img:hover > .title {
+    bottom:10%;
+    opacity: 0.9;
+}
+
+  .container > .portfolio > .col-3 > .img > .title > span{
+    font-size: 16px;
+    color:#666;
+  }
+  
+  .container > .portfolio > .col-3 > .img > img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .container > .portfolio > .col-3 > .img:hover img {
+        transform: scale(1.2,1.2);
+        opacity: 0.3;
+  }
+
+  .container > .portfolio > .col-3 > .img > a{
+    position: absolute;
+    top:50%;
+    left:50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .container > .portfolio > .col-3 > .img > a > .fa{
+    display:inline-block;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 25px;
+    line-height: 56px;
+    color: #fff;
+    background-color: #333;
+    transition: 0.4s; 
+    opacity: 0;
+}
+
+.container > .portfolio > .col-3 > .img:hover .fa {
+    transform: scale(1.2,1.2);
+    opacity: 0.4;
+}
+
+.div {
+    border: 1px solid red;
+    line-height: 40px;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.i {
+    margin-left: 10px;
+    font-size: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+
+  .break {
     display: inline-block;
     width:100%;
     padding: 8px 0 8px 0;
 }
+
+
+
+/*
+.container > .portfolio > .col-3 > .img{
+    display: inline-block;
+    text-align:center;
+}
+
+.container > .portfolio > .col-3 > .img > img{
+    display: inline-block;
+    width:100%;
+    height:auto;
+    transition: 0.4s;
+
+}
+
+.container > .portfolio > .col-3 > .img:hover img{
+    width: 120%;
+    transition: 0.4s;
+}
+
+
+
+*/

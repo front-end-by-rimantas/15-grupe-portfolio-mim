@@ -1,39 +1,99 @@
 .container > .my-experience > .col-2 > .info-left {
     display: inline-block;
-    width:30%;
+    width:26%;
     float:left;
-    padding:10px 0 10px 0;
+    padding:0 0 10px 0;
 }
 
 .container > .my-experience > .col-2 > .info-right {
     display: inline-block;
-    width:70%;
+    width:74%;
     float:left;
-    padding:10px 0 10px 0;
+    padding:0 0 80px 0;
+    border-left: 2px #999 dashed;
+    position:relative;
 }
 
-.container > .my-experience > .col-2 > .info-left > h4{
+.container > .my-experience > .col-2 > .info-right > .fa{
+    position:absolute;
+    top: 0px;
+    left:-11px;
+    display: inline-block;
+    border-radius: 100px;
+    background-color: #555;
+    color: #fff;
+    padding: 2px;
+}
+
+.container > .my-experience > .col-2 > .unset-dot{
+    border-left: 0px #999 dashed;
+}
+
+.container > .my-experience > .col-2 > .unset-dot > .fa{
+    left: -9px;
+}
+
+.container > .my-experience > .col-2 > .info-left > h3{
     display: inline-block;
     color: #333;
+    font-weight:300;
+    line-height: 24px;
+    letter-spacing: 1px;
 }
 
 .container > .my-experience > .col-2 > .info-left > p{
     display: inline-block;
-    color:#666;
+    width:100%;
+    color: #999;
+    font-size:15px;
+    padding-top:5px;
 }
 
-.container > .my-experience > .col-2 > .info-right > h3{
+.container > .my-experience > .col-2 > .info-right > h2{
     display: inline-block;
-    color:#333;
+    color: #666;
+    font-size:21px;
+    letter-spacing: 1px;
+    padding-left:20px;
 }
 
 .container > .my-experience > .col-2 > .info-right > p{
     display: inline-block;
-    color:#666;
+    color: #888;
+    font-size:15px;
+    padding-top:10px;
+    line-height: 24px;
+    padding-left:20px;
 }
 
 .break {
     display: inline-block;
     width:100%;
-    padding: 7px 0 7px 0;
+    padding: 0;
+}
+
+@media (max-width: 1199px){
+    .container > .my-experience > .col-2 > .info-left {
+        width:40%;
+    }
+
+    .container > .my-experience > .col-2 > .info-right {
+        width:60%;
+    }
+}
+
+@media (max-width: 759px){
+   
+    .container > .my-experience > .col-2 > .info-left {
+        width:20%;
+    }
+    .container > .my-experience > .col-2 > .info-right {
+        text-align:center;
+        width:70%;
+        border-left:none;
+    }
+
+    .container > .my-experience > .col-2 > .info-right > .fa{
+        display:none;
+    }
 }
