@@ -486,14 +486,26 @@
                 </div>
             </div>
             <div class="col-2">
-                <div class="form">
-                    <form class="form">
-                        <input class="half" type="text" placeholder="Your Name">
-                        <input class="half" type="email" placeholder="Your Email">
-                        <textarea placeholder="Your Message"></textarea>
-                        <div class="btn">SEND MESSAGE</div>
-                    </form>
-                </div>
+                <form>
+                    <fieldset class="form-row half">
+                        <input type="text"name="name" placeholder="Your Name" id="name">
+                        <span id="alert-name"></span>
+                    </fieldset>
+                    <fieldset class="form-row half">
+                        <input type="email" name="email" placeholder="Your Email" id="email">
+                        <span id="alert-mail"></span>
+                    </fieldset>
+                    <fieldset class="form-row">
+                        <textarea placeholder="Your Message" id="message"></textarea>
+                        <span id="alert-text"></span>
+                    </fieldset>
+                    <div class="form-row">
+                        <div class="btn" id="fBtn">SEND MESSAGE</div><div id="loader"></div>
+                    </div>
+                    <div class="form-row alert-info">
+                        <div id="alert-info"></div>
+                    </div>
+                </form>   
             </div>
         </div>
     </section>
@@ -518,6 +530,7 @@
         </div>
     </footer>
     <script src="./js/header.js"></script>
+    <script src="./js/form-validation.js"></script>
     <script src="./js/data.js"></script>
 </body>
 </html>
