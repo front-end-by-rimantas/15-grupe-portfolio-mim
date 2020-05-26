@@ -1,24 +1,42 @@
 .container > .header > .col-1 > .logo {
     display: inline-block;
-    padding:20px 0 0 0;
+    padding:40px 0 0 5px;
     width:19%;
     float: left;
+    height: 80px;
 }
-
 .container > .header > .col-1 > .nav {
     display: inline-block;
-    padding:30px 0 0 0;
+    padding:60px 0 0 0;
     width:80%;
     float: left;
     text-align: right;
+    height: 80px;
 }
     .nav > .headerNav > a {
         text-decoration: none;
         padding: 0 15px;
         vertical-align: bottom;
         color: #777777;
+        position: relative;
+        }
+            .nav > .headerNav > a::after {
+                content: "";
+                height: 3px;
+                width: 0;
+                position: absolute;
+                top: 6px;
+                left: 50%;
+                opacity: 0;
+                background-color: #AFAFAF;
+                transform: translate(-50%);
+                transition: 0.3s;
 
-    }
+            }
+                .nav > .headerNav > a:hover::after{
+                    opacity: 1;
+                    width:100%;
+                }
         .openbtn {
             cursor: pointer;
             padding: 2px 15px;
@@ -56,17 +74,17 @@
                 .sidepanel > a:last-child{
                     border: none;
                 }
-                .sidepanel > a:hover{
-                    background-color: #000000;
-                }
-                .sidepanel:hover > .lightLogo{
-                    background-color: #2B2B2B; 
-                    opacity: 0.3;
-                }
-                .sidepanel:hover  > .closebtn{
-                    background-color: #2B2B2B; 
-                    opacity: 0.9;
-                }
+                    .sidepanel > a:hover{
+                        background-color: #000000;
+                    }
+                    .sidepanel:hover > .lightLogo{
+                        background-color: #2B2B2B; 
+                        opacity: 0.3;
+                    }
+                    .sidepanel:hover  > .closebtn{
+                        background-color: #2B2B2B; 
+                        opacity: 0.9;
+                    }
                 .sidepanel > .closebtn {
                     position: absolute;
                     top: 0;
