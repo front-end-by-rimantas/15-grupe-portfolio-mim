@@ -1,9 +1,10 @@
 .container > .header > .col-1 > .logo {
     display: inline-block;
-    padding:40px 0 0 5px;
+    padding: 50px 0 0 5px;
     width:19%;
     float: left;
     height: 80px;
+    position: relative;
 }
 .container > .header > .col-1 > .nav {
     display: inline-block;
@@ -16,6 +17,7 @@
     .nav > .headerNav > a {
         text-decoration: none;
         padding: 0 15px;
+        font-size: 14px;
         vertical-align: bottom;
         color: #777777;
         position: relative;
