@@ -5,11 +5,12 @@
     float: left;
 }
 
-.container > .my-work > .col-2 > .img{
+.container > .my-work > .col-2 > .img > img{
     display: inline-block;
-    width:75%;
+    max-width:75%;
     float: right;
     height:auto;
+    margin-bottom: -80px;
 }
     .info > h5 {
         display: inline-block;
@@ -52,7 +53,7 @@
             background-color: #000000;
         }
     
-        @media (max-width: 759px){
+        @media (max-width: 979px){
             .container > .my-work > .col-2 > .info {
                 text-align: center;
             }
@@ -60,3 +61,4 @@
                 margin-top: 30px;
             }
         }
+       
