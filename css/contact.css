@@ -114,6 +114,7 @@
               max-height: 300px;
               border: 1px solid #ddd;
               padding: 20px 0 0 20px;
+              line-height: 25px;
           }
             .container > .contact > .col-2 > form > .form-row > input:focus {
                   outline: none;

@@ -5,9 +5,9 @@ document.getElementById("fBtn").addEventListener("click", function(){
   });
   
 function checkForm() {
-    const name = document.getElementById('name').value;
-    const mail = document.getElementById('email').value;
-    const text = document.getElementById('message').value;
+    const name = document.getElementById('name');
+    const mail = document.getElementById('email');
+    const text = document.getElementById('message');
 
     let alertName = document.getElementById('alert-name');
     let alertMail = document.getElementById('alert-mail');
@@ -30,22 +30,22 @@ function checkForm() {
 
     loaderBtn.classList.remove("loader");
 
-    if ( name.trim().length === 0 ) {
+    if ( name.value.trim().length === 0 ) {
       alertName.innerHTML = msg;
       alertBox = true;
     }
 
-    if ( mail.trim().length === 0 ) {
+    if ( mail.value.trim().length === 0 ) {
       alertMail.innerHTML = msg;
       alertBox = true;
     }
 
-    if ( text.length === 0 ) {
+    if ( text.value.length === 0 ) {
       alertText.innerHTML = msg;
       alertBox = true;
     }
 
-    if( mail.trim().length > 0 && ! mail.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/) ) {
+    if( mail.value.trim().length > 0 && ! mail.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/) ) {
       alertMail.innerHTML = 'The e-mail address entered is invalid.';
       alertBox = true;
     }
@@ -54,7 +54,10 @@ function checkForm() {
     {
       alertInfo.innerHTML = '<p class="message-error">One or more fields have an error. Please check and try again.</p>';
     }
-    else {
+    else {   
+      name.value = '';
+      mail.value = '';
+      text.value = '';  
       alertInfo.innerHTML = '<p class="message-ok">Thank you for your message. It has been sent.</p>';
     }
 
