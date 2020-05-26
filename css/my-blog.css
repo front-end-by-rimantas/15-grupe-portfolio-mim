@@ -21,8 +21,8 @@
 .container > .my-blog > .col-3 > .item > .left{
     display: inline-block;
     float: left;
-    padding:20px;
-    font-size: 14px;
+    padding:10px;
+    font-size: 13px;
     color:#666;
     font-weight: 300;
 }
@@ -30,15 +30,15 @@
 .container > .my-blog > .col-3 > .item > .right{
     display: inline-block;
     float: right;
-    padding:20px;
-    font-size: 14px;
+    padding:10px 10px 0 0;
+    font-size: 13px;
     color:#666;
     font-weight: 300;
 }
 
 .container > .my-blog > .col-3 > .item > .right > i,
 .container > .my-blog > .col-3 > .item > .left > i{
-    margin-right: 5px;
+    margin-right: 2px;
 }
 
 .container > .my-blog > .col-3 > .item > .text-block{
