@@ -19,3 +19,9 @@ valid();
 import blogData from './data/blogData.js';
 import blogRender from './components/blog/blogRender.js';
 new blogRender( '.my-blog' , blogData );
+
+/* Service generator */
+
+import serviceData from './data/serviceData.js';
+import serviceRender from './components/service/serviceRender.js';
+new serviceRender( '.services' , serviceData );
