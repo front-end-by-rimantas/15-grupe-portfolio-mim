@@ -1,8 +1,10 @@
 'use strict';
 
-document.getElementById("fBtn").addEventListener("click", function(){
-    checkForm();
-  });
+function valid() {
+  document.getElementById("fBtn").addEventListener("click", function(){
+      checkForm();
+    });
+}
   
 function checkForm() {
     const name = document.getElementById('name');
@@ -63,3 +65,5 @@ function checkForm() {
 
   }, 1000);
 }
+
+export { valid };
