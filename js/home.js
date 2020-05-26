@@ -25,3 +25,9 @@ new blogRender( '.my-blog' , blogData );
 import serviceData from './data/serviceData.js';
 import serviceRender from './components/service/serviceRender.js';
 new serviceRender( '.services' , serviceData );
+
+/* Experience generator */
+
+import experienceData from './data/experienceData.js';
+import experienceRender from './components/experience/experienceRender.js';
+new experienceRender( '.my-experience' , experienceData );
