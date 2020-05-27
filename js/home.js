@@ -4,8 +4,8 @@
 
 import skills from './data.js';
 import progressBars from './components/progress-bar.js';
-progressBars;
-const progressBarsSelector = '#skills .col-5';
+
+const progressBarsSelector = '#skills .bars';
 progressBars.renderProgressBar(progressBarsSelector, skills);
 progressBars.animateProgressBars(progressBarsSelector);
 
