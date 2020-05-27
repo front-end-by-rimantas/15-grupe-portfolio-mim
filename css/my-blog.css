@@ -45,13 +45,7 @@
     display: inline-block;
     border-top:solid 1px #ddd;
     width: 100%;
-    padding:20px;
-    /*width: 100%;
-    padding:20px;
-    font-size: 20px;
-    line-height: 32px;
-    color:#666;
-    font-weight: 300;*/
+    padding:15px;
 }
 
 .container > .my-blog > .col-3 > .item > .text-block > .text{
