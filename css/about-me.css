@@ -1,19 +1,38 @@
+#prog-bars {
+    float: right;
+}
+
+.container > .about-me > h2{
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 60px 0px 5px;
+    font-size: 33px;
+    color: #444;
+    font-weight: 600;
+}
+
+.container > .about-me > .col-2 { 
+    width: 40%;
+}
 .container > .about-me > .col-2 > .info { 
     display: inline-block;
-    width:100%;
-    padding:10px 0 10px 0;
+    width: 100%;
+    padding: 0;
 }
     .container .about-me > .col-2 > .info> h3 {
         font-weight: 600;
         margin: 0 0 15px;
         font-size: 22px;
-        font-family: 'montserratsemibold';
         color: #4f4f4f;
         line-height: 1.1;
     }
     .container .about-me > .col-2 > .info> p {
         line-height: 28px;
         font-size: 16px;
+        margin: 0 0 15px;
     }
 
 .container > .about-me > .col-2 > .download-btn > a { 
@@ -23,24 +42,21 @@
     border: 20px none;
     border-radius: 5px;
     font-size: 14px;
-    height: 47px;
+    height: 60px;
     line-height: 50px;
-    padding: 10px 20px;
+    padding: 15px 27px;
     outline-width: initial;
+    font-weight: 700;
 }
 
 .container > .about-me > .col-2 > .progress-bar-container {
     display: inline-block;
-    padding: 10px 10px;
-    width:100%;
+    padding: 5px 5px;
+    width: 100%;
 }
 
 /* Progress bar + animation  */
 
-.progress-bar-container{
-    display: inline-block;
-    width: 100%;
-}
 .progress-bar-container + .progress-bar-container {
     margin-top: 10px;
 }
@@ -65,6 +81,7 @@
         background-color: #c8c8c8;
         border-radius: 3px;
         position: relative;
+
     }
         .progress-bar-container > .bar::after{
             display: inline-block;
@@ -88,14 +105,24 @@
             .progress-bar-container > .bar > .value > .value1 {
                 display: inline-block;
                 position: absolute;
-                right: 0;
-                top: 20px;
+                right: -25px;
+                top: -30px;
+                font-weight: 700;
+                color: #5e5e5e;
+                font-size: 14px;
             }
         .progress-bar-container > .bar > .value > .load {
             display: inline-block;
             background-color: #484848;
             width: 100%;
             height: 100%;
-            vertical-align: top;
             border-radius: 3px;
             float: left;
+            vertical-align: top;
+        }
+        
+        @media (max-width: 759px){
+            .container > .about-me > .col-2 { 
+                width: 100%;
+            }
+        }

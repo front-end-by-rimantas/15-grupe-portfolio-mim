@@ -1,0 +1,32 @@
+.top-line, .bot-line {
+    margin: auto;
+    background-color: #b3b3b3; 
+    margin-bottom: 3px; 
+    border: solid;
+    border-width: 1px;
+    border-color: #b3b3b3; 
+}
+    .top-line {
+        width: 40px;
+    }
+    .bot-line {
+        width: 80px;
+        margin-bottom: 40px;
+    }
+    .top-line2 {
+        width: 40px;
+        background-color: #b3b3b3; 
+        margin-bottom: 3px; 
+        border: solid;
+        border-width: 1px;
+        border-color: #b3b3b3; 
+        margin-top: 5px
+    }
+    .bot-line2 {
+        width: 80px;
+        background-color: #b3b3b3; 
+        margin-bottom: 30px; 
+        border: solid;
+        border-width: 1px;
+        border-color: #b3b3b3; 
+    }
