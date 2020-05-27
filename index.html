@@ -77,7 +77,7 @@
                     <p>
                         On the other hand, we denounce with righteous indignation and dislike men who are so beguiled demord by.
                     </p>
-                    <div class="my-work-btn">MY WORK</div>
+                    <a class="my-work-btn" href="#portfolio">MY WORK</a>
                 </div>
             </div>
             <div class="col-2">
@@ -191,82 +191,6 @@
                     <li>3D WORK</li> 
                 </ul>
             </div>
-            <div class="col-3">
-                <div class="img">
-                    <a href="#">
-                        <i class="fa fa-link"></i>
-                    </a>
-                    <div class="title">
-                        New Portfolio<br>
-                        <span>Garden</span>
-                    </div>
-                    <img src="./img/portfolio/a1.jpg" alt="a">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img">
-                    <a href="#">
-                        <i class="fa fa-link"></i>
-                    </a>
-                    <div class="title">
-                        Mim Contrary To three<br>
-                        <span>Poster</span>
-                    </div>
-                    <img src="./img/portfolio/a5.jpg" alt="b">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img">
-                    <a href="#">
-                        <i class="fa fa-link"></i>
-                    </a>
-                    <div class="title">
-                        Portfolio One<br>
-                        <span>Fliyer</span>
-                    </div>
-                    <img src="./img/portfolio/a2.jpg" alt="a">
-                </div>
-            </div>
-
-            <div class="break"></div>
-
-            <div class="col-3">
-                <div class="img">
-                    <a href="#">
-                        <i class="fa fa-link"></i>
-                    </a>
-                    <div class="title">
-                        Contrary To Popular Belief<br>
-                        <span>Book Cover</span>
-                    </div>
-                    <img src="./img/portfolio/a3.jpg" alt="a">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img">
-                    <a href="#">
-                        <i class="fa fa-link"></i>
-                    </a>
-                    <div class="title">
-                        Contrary To Popular Belief<br>
-                        <span>HTML</span>
-                    </div>
-                    <img src="./img/portfolio/a4.jpg" alt="b">
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="img">
-                    <a href="#">
-                        <i class="fa fa-link"></i>
-                    </a>
-                    <div class="title">
-                        Popular Belief Three<br>
-                        <span>Graphics</span>
-                    </div>
-                    <img src="./img/portfolio/a6.jpg" alt="a">
-                </div>
-            </div>
-            
         </div>
     </section>
 
@@ -466,14 +390,26 @@
                 </div>
             </div>
             <div class="col-2">
-                <div class="form">
-                    <form class="form">
-                        <input class="half" type="text" placeholder="Your Name">
-                        <input class="half" type="email" placeholder="Your Email">
-                        <textarea placeholder="Your Message"></textarea>
-                        <div class="btn">SEND MESSAGE</div>
-                    </form>
-                </div>
+                <form autocomplete="off">
+                    <fieldset class="form-row half">
+                        <input type="text" name="name" placeholder="Your Name" id="name">
+                        <span id="alert-name"></span>
+                    </fieldset>
+                    <fieldset class="form-row half">
+                        <input type="email" name="email" placeholder="Your Email" id="email">
+                        <span id="alert-mail"></span>
+                    </fieldset>
+                    <fieldset class="form-row">
+                        <textarea placeholder="Your Message" id="message" spellcheck="false"></textarea>
+                        <span id="alert-text"></span>
+                    </fieldset>
+                    <div class="form-row">
+                        <div class="btn" id="fBtn">SEND MESSAGE</div><div id="loader"></div>
+                    </div>
+                    <div class="form-row alert-info">
+                        <div id="alert-info"></div>
+                    </div>
+                </form>   
             </div>
         </div>
     </section>

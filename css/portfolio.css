@@ -41,6 +41,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    margin-bottom:17px;
 }
 
 .container > .portfolio > .col-3 > .img > .title {
@@ -127,28 +128,3 @@
     width:100%;
     padding: 8px 0 8px 0;
 }
-
-
-
-/*
-.container > .portfolio > .col-3 > .img{
-    display: inline-block;
-    text-align:center;
-}
-
-.container > .portfolio > .col-3 > .img > img{
-    display: inline-block;
-    width:100%;
-    height:auto;
-    transition: 0.4s;
-
-}
-
-.container > .portfolio > .col-3 > .img:hover img{
-    width: 120%;
-    transition: 0.4s;
-}
-
-
-
-*/
