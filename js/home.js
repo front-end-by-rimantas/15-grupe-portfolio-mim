@@ -31,3 +31,9 @@ new serviceRender( '.services' , serviceData );
 import experienceData from './data/experienceData.js';
 import experienceRender from './components/experience/experienceRender.js';
 new experienceRender( '.my-experience' , experienceData );
+
+/* Portfolio generator */
+
+import portfolioData from './data/portfolioData.js';
+import portfolioRender from './components/portfolio/portfolioRender.js';
+new portfolioRender( '.portfolio' , portfolioData );
