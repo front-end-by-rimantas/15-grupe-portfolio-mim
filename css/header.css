@@ -5,6 +5,7 @@
     float: left;
     height: 80px;
     position: relative;
+    scroll-behavior: auto;
 }
 .container > .header > .col-1 > .nav {
     display: inline-block;
@@ -100,7 +101,9 @@
                     text-align: center;
                     padding: 60px; 
                     transition: 2s; 
-                    opacity: 0.9;                                       
+                    opacity: 0.9; 
+                    scroll-behavior: auto;
+                                      
                 }
                     .sidepanel > .closebtn > .iconify {
                         color: #999999;

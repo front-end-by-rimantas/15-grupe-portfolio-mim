@@ -1,0 +1,16 @@
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 79px;
+    right: 15px;
+    width: 30px;
+    height: 35px;
+    background: #393939;
+    border: none;
+    z-index: 1;
+    color: white;
+}
+    
+    #myBtn:hover{
+        background-color: black;
+    }
