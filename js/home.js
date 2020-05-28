@@ -14,26 +14,18 @@ progressBars.animateProgressBars(progressBarsSelector);
 import { valid } from './components/form-validation/form-validation.js';
 valid();
 
-/* Blog generator */
+/* Html generators */
 
-import blogData from './data/blogData.js';
-import blogRender from './components/blog/blogRender.js';
-new blogRender( '.my-blog' , blogData );
-
-/* Service generator */
-
-import serviceData from './data/serviceData.js';
-import serviceRender from './components/service/serviceRender.js';
-new serviceRender( '.services' , serviceData );
-
-/* Experience generator */
+import DataRender from './components/html-render/DataRender.js';
 
 import experienceData from './data/experienceData.js';
-import experienceRender from './components/experience/experienceRender.js';
-new experienceRender( '.my-experience' , experienceData );
-
-/* Portfolio generator */
+new DataRender( '.my-experience', experienceData, 'experience' );
 
 import portfolioData from './data/portfolioData.js';
-import portfolioRender from './components/portfolio/portfolioRender.js';
-new portfolioRender( '.portfolio' , portfolioData );
+new DataRender( '.portfolio', portfolioData, 'portfolio' );
+
+import serviceData from './data/serviceData.js';
+new DataRender( '.services', serviceData, 'services' );
+
+import blogData from './data/blogData.js';
+new DataRender( '.my-blog', blogData, 'blog' );
