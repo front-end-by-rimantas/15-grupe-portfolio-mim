@@ -1,5 +1,6 @@
 class SimpleSlider {
-    constructor() {
+    constructor( itemsCnt) {
+        this.cnt = itemsCnt;
         this.navButtons1 = document.querySelector(".dot.first-bar");
         this.navButtons2 = document.querySelector(".dot.second-bar");
         this.navButtons3 = document.querySelector(".dot.third-bar");

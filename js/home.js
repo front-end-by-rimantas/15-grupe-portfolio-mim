@@ -20,9 +20,8 @@ import SimpleSlider from './components/testimonial/testimonial.js';
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-    const longBox = document.querySelector('.review-inner-box');
-    console.log(longBox.querySelectorAll('.item').length);
-    new SimpleSlider();
+    const longBox = document.querySelectorAll('.review-inner-box > .item');
+    new SimpleSlider(longBox.length);
 }
 
 /* Html generators */
