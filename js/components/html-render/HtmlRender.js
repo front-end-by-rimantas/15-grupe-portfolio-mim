@@ -23,6 +23,9 @@ class HtmlRender {
         else if ( this.htmlSection === 'blog') {
             this.blogRender();
         }
+        else if ( this.htmlSection === 'testimonial') {
+            this.testimonialRender();
+        }
         else {
             console.error(`Method ${this.htmlSection}Render() not exists!` );
         }
@@ -87,6 +90,17 @@ class HtmlRender {
                         <div class="icon"><a href="#"><i class="fa fa-plus"></i></a></div>
                     </div>
                 </div>
+            </div>`;
+        this.container.insertAdjacentHTML('beforeend', HTML);
+    }
+
+    testimonialRender() {
+        const HTML = `
+            <div class="item">
+                <img src="./img/testimonial/${this.data.img}.png" alt="${this.data.img}">
+                <h3>${this.data.h3}</h3>
+                <h5>${this.data.h5}</h5>
+                <p>${this.data.text}</p>
             </div>`;
         this.container.insertAdjacentHTML('beforeend', HTML);
     }
