@@ -23,23 +23,11 @@
         color: #777777;
         position: relative;
         }
-            .nav > .headerNav > a::after {
-                content: "";
-                height: 3px;
-                width: 0;
-                position: absolute;
-                top: 6px;
-                left: 50%;
-                opacity: 0;
-                background-color: #AFAFAF;
-                transform: translate(-50%);
-                transition: 0.3s;
-
+            .nav > .headerNav > a:hover {
+                opacity: 1;
+                width:100%;
             }
-                .nav > .headerNav > a:hover::after{
-                    opacity: 1;
-                    width:100%;
-                }
+                
         .openbtn {
             cursor: pointer;
             padding: 2px 15px;
@@ -53,6 +41,7 @@
                     margin: 2px 0;                   
             }
             .sidepanel {
+                margin-left: 200px;
                 height: 100%; 
                 width: 0; 
                 position: fixed; 
@@ -60,9 +49,8 @@
                 top: 0;
                 right: 0;
                 background-color: #2B2B2B; 
-                overflow-x: hidden;
                 padding-top: 30px; 
-                transition: 0.5s;                
+                transition: 0.5s; 
             }       
             .sidepanel > a {
                 line-height: 40px;                
@@ -77,6 +65,20 @@
                 .sidepanel > a:last-child{
                     border: none;
                 }
+                .sidepanel > a > p {
+                    border-radius: 3px;
+                    color: red;
+                    background-color: yellow;
+                    font-size: 12px;
+                    padding: 0 5px;
+                    line-height: 24px;
+                    position: fixed;
+                    margin: -30px -61px;
+                    display: none;
+                } 
+                    .sidepanel > a > .add-active{
+                        display: block;
+                    }
                     .sidepanel > a:hover{
                         background-color: #000000;
                     }
