@@ -14,6 +14,17 @@ progressBars.animateProgressBars(progressBarsSelector);
 import { valid } from './components/form-validation/form-validation.js';
 valid();
 
+/* Slider */
+
+import SimpleSlider from './components/testimonial/testimonial.js';
+document.addEventListener("DOMContentLoaded", init);
+
+function init() {
+    const longBox = document.querySelector('.review-inner-box');
+    console.log(longBox.querySelectorAll('.item').length);
+    new SimpleSlider();
+}
+
 /* Html generators */
 
 import DataRender from './components/html-render/DataRender.js';
@@ -29,3 +40,6 @@ new DataRender( '.services', serviceData, 'services' );
 
 import blogData from './data/blogData.js';
 new DataRender( '.my-blog', blogData, 'blog' );
+
+import testimonialData from './data/testimonialData.js';
+new DataRender( '.review-inner-box', testimonialData, 'testimonial' );
