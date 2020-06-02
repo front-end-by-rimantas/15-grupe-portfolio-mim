@@ -34,6 +34,9 @@ new DataRender( '.my-experience', experienceData, 'experience' );
 import portfolioData from './data/portfolioData.js';
 new DataRender( '.portfolio', portfolioData, 'portfolio' );
 
+import UniqueRender from './components/unique-render/UniqueRender.js';
+new UniqueRender( '.filters', portfolioData, 'portfolio' );
+
 import serviceData from './data/serviceData.js';
 new DataRender( '.services', serviceData, 'services' );
 
