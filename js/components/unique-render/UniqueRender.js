@@ -10,7 +10,7 @@ class UniqueRender {
     init() {  
 
         this.container = document.querySelector(this.selector);
-        
+       
         if ( !this.container ) {
             console.error(`Container not exists!` );
             return false;
@@ -25,13 +25,14 @@ class UniqueRender {
         }
 
         if ( this.htmlSection === 'portfolio') {
-            this.portfolioFilterRender();
+            this.uniqueValueRender();
+            this.clickPut();
         }else {
             console.error(`Method ${this.htmlSection}Render() not exists!` );
         }
     }
 
-    portfolioFilterRender() {
+    uniqueValueRender() {
 
         /* ----- Fine Classic style --------------
         
@@ -63,9 +64,21 @@ class UniqueRender {
         /* ------------------------------------ */
 
         for (let i = 0; i < res.length; i++) {
-            const HTML = `<li>${res[i]}</li>`;
-            this.container.insertAdjacentHTML('beforeend', HTML);
+            const HTML = `<li class="click">${res[i]}</li>`;
+            this.container.insertAdjacentHTML('beforeend', HTML); 
         }
+    }
+
+    clickPut() {
+        let click = document.querySelectorAll('.click');
+
+        for (let i=0; i<click.length; i++) {       
+            click[i].addEventListener('click', this.clickGet);
+        }  
+    }
+
+    clickGet( event){
+        console.log(event.target.textContent.toLowerCase());
     }
    
 }

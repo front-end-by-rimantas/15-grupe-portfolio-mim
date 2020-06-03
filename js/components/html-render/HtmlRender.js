@@ -49,7 +49,7 @@ class HtmlRender {
 
     portfolioRender() {
         const HTML = `
-            <div class="col-3">
+            <div class="col-3" data-tags="${this.data.tags}">
                 <div class="img">
                     <a href="#"><i class="fa fa-link"></i></a>
                     <div class="title">${this.data.title1}<br><span> ${this.data.title2}</span></div>
