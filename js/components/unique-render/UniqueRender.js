@@ -73,12 +73,13 @@ class UniqueRender {
         let click = document.querySelectorAll('.click');
 
         for (let i=0; i<click.length; i++) {       
-            click[i].addEventListener('click', this.clickGet);
+            click[i].addEventListener('click', this.clickGet, false);
         }  
     }
 
     clickGet( event){
         console.log(event.target.textContent.toLowerCase());
+        console.log( this.data);
     }
    
 }
