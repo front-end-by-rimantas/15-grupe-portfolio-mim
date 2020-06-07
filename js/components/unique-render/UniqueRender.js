@@ -18,7 +18,7 @@ class UniqueRender {
 
     render() {
         if ( !Array.isArray(this.data) ) {
-            console.error('ERROR: duomenys turi buti array tipo!');
+            console.error('ERROR: data not array type!');
         }
 
         if ( this.htmlSection === 'portfolio' ) {
