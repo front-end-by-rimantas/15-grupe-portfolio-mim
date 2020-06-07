@@ -44,7 +44,7 @@
  display: none;
 }
 
-.container > .portfolio > .hider{
+.container > .portfolio > .animation{
   animation: bounceAround 1.1s ease-in-out;
  }
 

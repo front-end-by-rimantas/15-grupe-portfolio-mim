@@ -68,9 +68,9 @@ class UniqueRender {
         if ( filterContainerInner === 'all' ) {
             for ( let i=0; i<htmlBlockCnt; i++ ) {
                 htmlBlock[i].classList.remove('hide');
-                htmlBlock[i].classList.remove('hider');
+                htmlBlock[i].classList.remove('animation');
                 setTimeout(function(){ 
-                    htmlBlock[i].classList.add('hider');
+                    htmlBlock[i].classList.add('animation');
                 }, 100); 
             }
             return;
@@ -79,12 +79,12 @@ class UniqueRender {
         for ( let i = 0; i<htmlBlockCnt; i++ ) {       
             const checkTags = htmlBlock[i].dataset.tags.toLowerCase().split(',').indexOf(filterContainerInner);
             
-            htmlBlock[i].classList.remove('hider');
+            htmlBlock[i].classList.remove('animation');
 
             if ( checkTags >= 0 ) {
                 htmlBlock[i].classList.remove('hide');
                 setTimeout(function(){ 
-                    htmlBlock[i].classList.add('hider');
+                    htmlBlock[i].classList.add('animation');
                 }, 100);   
             } else {
                 htmlBlock[i].classList.add('hide');
