@@ -67,18 +67,27 @@ class UniqueRender {
     
         if ( filterContainerInner === 'all' ) {
             for ( let i=0; i<htmlBlockCnt; i++ ) {
-                htmlBlock[i].style.display = "block";  //works[i].classList.remove('hide');
+                htmlBlock[i].classList.remove('hide');
+                htmlBlock[i].classList.remove('hider');
+                setTimeout(function(){ 
+                    htmlBlock[i].classList.add('hider');
+                }, 100); 
             }
             return;
         }
 
         for ( let i = 0; i<htmlBlockCnt; i++ ) {       
             const checkTags = htmlBlock[i].dataset.tags.toLowerCase().split(',').indexOf(filterContainerInner);
+            
+            htmlBlock[i].classList.remove('hider');
 
             if ( checkTags >= 0 ) {
-                htmlBlock[i].style.display = "block"; //works.classList.remove('hide');
+                htmlBlock[i].classList.remove('hide');
+                setTimeout(function(){ 
+                    htmlBlock[i].classList.add('hider');
+                }, 100);   
             } else {
-                htmlBlock[i].style.display = 'none'; //works.classList.add('hide');
+                htmlBlock[i].classList.add('hide');
             }
         }
     }
